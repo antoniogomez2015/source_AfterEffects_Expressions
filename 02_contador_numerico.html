@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+
+    LoopOut:
+    ________
+
+        Tutorial:
+        _________
+
+           Cómo hacer un Contador numérico en After Effects CC 2018 #10
+
+                https://www.youtube.com/watch?v=CaAx7jD-ZSw
+
+
+                Expresión para eliminar los decimales en el contador:
+
+                    versión en ingles:
+
+                        Math.round((thisComp.layer("30").effect("Slider Control")("Slider"))*1)/1;
+
+
+                    versión en español:
+
+                        Math.round((thisComp.layer("0").effect("Control del deslizador")("Deslizador"))*1)/1;
+
+                        
+
+        Base:
+        _____
+
+        _primeramente debemos de tener un composición creada y una layer, de tipo text
+
+
+        Effect:
+        _______
+
+        _para que así, con la layer, de tipo text, seleccionada proceder aplicarle un efecto yendo ha "Effects/Expression Controls/", y una vez allí, le apliquemos el efecto "Slider Control"
+
+
+        Expression:
+        ___________
+
+        _para posteriormente abrir las propiedades de la layer, de tipo text
+
+        _hasta ubicar la propiedad específicamente "Source Text", en la cuál, haremos "Alt + Mouse Left Click"
+
+        _para así, activemos las opciones de expresiones para ésta propiedad
+
+        _para que así, podamos arrastrar el "picker", hasta el efecto que hemos aplicado "Slider Control/Slider", para que así, ambos elementos queden relacionados
+
+
+        Modifier:
+        _________
+
+        _más para que conteo de números se realice en número enteros, tendremos que modificar la expresión a la siguiente:
+
+
+            Math.round((thisComp.layer("30").effect("Slider Control")("Slider"))*1)/1;
+
+
+        _la sección "layer("30")", de la expresión, especificamente ("name") 
+        
+        _debe corresponder con el nombre de la layer de tipo texto que hacer referencia la expresión
+
+        _para que así, ahora el conteo numérico se realice a través, de sólo número enteros
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>
