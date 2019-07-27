@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+
+    Frames Counter:
+    _______________
+
+        Tutorial:
+        _________
+
+            FaceApp PARA VIDEO, usando After Effects || Tutorial
+
+
+                https://www.youtube.com/watch?v=lwYm8KN20oI
+
+
+
+        _tenemos la posibilidada de renderizar en pantalla el frame actual de una animación ó video dentro de una composición respectiva
+
+        _para lo cuál, primeramente debemos de tener una escena y composición de trabajo
+
+        _sobre la cuál, debemos de crea una nueva layer, de tipo texto, "text"
+
+        _para que así, podamos desplegar las opciones de la nueva layer, de tipo texto que hemos creado
+
+        _de ésta manera, podremos acceder a la opción de:
+
+            _Text
+
+        _y en la cuál, podremos hacer "Mouse Left Click + ALt", sobre la propiedad
+
+            _Text
+
+                _"Source Text"
+
+        _para que así, las expresiones sean activadas para ésta propiedad en específico
+
+
+
+        Expresion:
+        __________
+        
+        _de ésta manera, ahora podremos crear la siguiente expresión:
+
+            _Math.round(time*29.97)
+
+
+        _de ésta manera, a través, del objeto "Math", de javascript, podremos hacer el cálculo para la representación frame to frame, en pantalla
+
+        _más éste cálculo será redondeado ha una denominación de números enteros, indicando así, si es un inferior  ha "0.5", será menor, y si es mayor es por que cercano ha "1", eliminando así, los decimales
+
+        _y "time", ésto quiere decir que conventirá éste parámetro "Source Text", al valor del tiempo actual, pero en éste caso multiplicado por el frame rate, para que así, nos muestre el frame to frame, exacto en todo momento
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>
