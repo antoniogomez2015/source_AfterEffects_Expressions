@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--
+
+    Rebound:
+    ________
+
+        Tutorial:
+        _________
+
+            Como Animar un Logo con Expresiones After Effects Tutorial
+                https://www.youtube.com/watch?v=FH8eQGimtK8
+
+
+
+                
+        _tenemos la posibilidad de crear rebotes de objetos animados de forma automática
+
+        _para lo cuál, debemos animar previamente una propiedad como 
+        
+            _"Position"
+
+            _"Rotation"
+
+
+        _para posteriormente hacer "Alt + Mouse Left Click", sobre el ícono de animación para que así, se activen las expresiones para la respectiva propiedad
+
+        _para que así, de ésta manera, podremos pegar una de las siguientes expresiones:
+
+
+            For Posicion:
+            _____________
+
+                //applyTo: position
+                // Inertial Easing (elastically reacts to the speed at which it was animated)
+                n = 0;
+                if (numKeys > 0){
+                n = nearestKey(time).index;
+                if (key(n).time > time){
+                n--;
+                }
+                }
+                if (n == 0){
+                t = 0;
+                }else{
+                t = time - key(n).time;
+                }
+                if (n > 0){
+                v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
+                amp = .05;
+                freq = 3.0;
+                decay = 5.0;
+                value + v*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t);
+                }else{
+                value;
+                }
+
+
+
+            For Rotacion:
+            _____________
+
+                //applyTo: rotation
+                // Inertial Easing (elastically reacts to the speed at which it was animated)
+                n = 0;
+                if (numKeys > 0) {
+                n = nearestKey(time).index;
+                if (key(n).time > time){
+                n--;
+                }
+                }
+                if (n == 0) {
+                t = 0;
+                } else {
+                t = time - key(n).time;
+                }
+                if (n > 0){
+                v = velocityAtTime(key(n).time - thisComp.frameDuration/10);
+                amp = 8;
+                freq = 2.0;
+                decay = 3.0;
+                value + (v/100)*amp*Math.sin(freq*t*2*Math.PI)/Math.exp(decay*t);
+                }else{
+                value;
+                }
+        
+
+
+
+
+
+
+
+
+
+
+
+-->
+</body>
+</html>
